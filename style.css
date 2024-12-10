@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar CSS */
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 5;
+}
+
+nav img{
+    width: 70px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #050505b9;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0,8px;
+    margin-left: 20px;
+    padding: 8px 13px;
+    cursor: pointer;
+
+    transition: all 0.3s; /* 3 values = all, color, */
+}
+
+nav ul li a:hover{
+    background-color: #038c68;
+    color: white;    
+}
+
+nav .chat{
+    color: green;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-bottom: 2px solid rgb(113, 250, 113);
+    padding-bottom: 3px;
+}
+
+/* Home Page */
+#home{
+    width: 100%;
+    height: 600px;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#home .model{
+    width: 450px;
+    height: 600px;
+    /* background-color: blue;   */
+}
+
+#home .model img{
+    width: 100%;  /* 2 values = 100%, inherit */
+    height: 100%;
+    object-fit: contain; /* 2 values = contain, cover */
+    /* background-color: aqua; */
+}
+
+#home .content{
+    width: 600px;
+    /* height: 300px; */
+    /* background-color: rgb(248, 186, 13);    */
+
+    margin-left: 50px;
+}
+
+#home .content h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.801)
+} 
+
+#home .content p{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.623);
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+}
+
+#home .content a{
+    text-decoration: none;
+    color: white;
+    background-color: #038c68;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 30px;
+    
+    padding: 10px 25px;
+}
+
+#home .content a:hover{
+    background-color: #46d9b2;
+    transition: all 0.5s;
+}
+
+/* Skill Section */
+
+#skills{
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .skillcontent{
+    width: 400px;
+    height: 400px;
+    /* background-color: blue; */
+}
+
+#skills .skillcontent h3{
+    color: lightgreen;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#skills .skillcontent h1{
+    font-size: 3.6rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+#skills .skillcontent .skilldetail{
+    width: 350px;
+    height: 90px;
+    background-color: purple;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .skillcontent .skilldetail .skillicon{
+    width: 35px;
+    height: 35px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-html5{
+    color: rgb(211, 38, 38);
+}
+
+#skills .skillcontent .skilldetail .skilltext{
+    width: 275px;
+    height: 80px;
+    /* background-color: red; */
+}
+
+#skills .skillcontent .skilldetail .skilltext h2{
+    font-size: 0.83rem;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+#skills .skillcontent .skilldetail .skilltext p{
+    font-size: 0.8rem;
+    color: grey;
+    line-height: 1rem;
+}
+
+.fa-css3-alt{
+    color: darkblue;
+}
+
+.fa-js{
+    color: rgb(168, 67, 0);
+}
+
+#skills .skillphoto img{
+    width: 100%;  /* 2 values = 100%, inherit */
+    height: 100%;
+    object-fit: contain; /* 2 values = contain, cover */
+    /* background-color: aqua; */
+}
+
+#skills .skillphoto{
+    width: 700px;
+    height: 400px;
+    /* background-color: green; */
+}
+
+/* Recent Section */
+#recent{
+    width: 100%;
+    height: 700px;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 80px;
+}
+
+#recent h3{
+    color: green;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#recent h1{
+    font-size: 3.5rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+#recent a{
+    padding: 8px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #038c68;
+    color: white;
+
+    transition: all 0.2s;
+} 
+
+#recent a:hover{
+    background-color: rgb(82, 235, 82);
+}
+
+/* Client Section */
+#client{
+    width: 100%;
+    height: 600px;
+    /* background-color: red; */
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#client h3{
+    color: rgb(82, 255, 82);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+
+#client h1{
+    font-size: 3.2rem;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+
+#client .cards{
+    width: 80%;
+    height: 400px;
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#client .cards .clientcard{
+    width: 300px;
+    height: 310px;
+    /* background-color: yellow; */
+    border-radius: 15px;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.068);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#client .cards .clientcard:hover{
+    background-color: #46d9b2;
+    transform: translateY(-20px);
+    transition: all 0.2s;
+}
+
+#client .cards .clientcard img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+#client .cards .clientcard .clienticon{
+    display: flex;
+}
+
+.fa-star{
+    color: tomato;
+} 
+
+#client .cards .clientcard p{
+    width: 240px;
+    height: 90px;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 0.9rem;
+    text-align: center;
+    overflow: hidden;
+
+    /* background: red; */
+}
+
+#client .cards .clientcard a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 17px;
+    background-color: #038c68;
+}
+
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+#contact img{
+    width: 400px;
+}
+
+#contact h1{
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+#contact .contactbox{
+    width: 330px;
+    height: 50px;
+    /* background-color: red; */
+    border-radius: 30px;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.055);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .contactbox input{
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#contact .contactbox a{
+    color: white;
+    background-color: #33b996;
+    padding: 6px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer small{
+    color: rgba(0, 0, 0, 0.425);
+}
+
+/* For Responsive Design */
+
+@media screen and (max-width: 500px) {
+    nav img{
+        width: 50px;
+    }
+
+    nav ul li a{
+        font-size: 0.7rem;
+        margin-left: 0px;
+    }
+
+    nav .chat{
+        font-size: 0.8rem;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home .model{
+        width: 300px;
+        height: 400px;
+    }
+
+    #home .content{
+        width: 400px;
+        margin-left: 0;
+    }
+
+    #home .content h1{
+        font-size: 0.8rem;
+    }
+
+    #home .content a{
+        font-size: 0.8rem;
+        padding: 7px 17px;
+    }
+}
+
+
+
+
+
+
+
+
+
